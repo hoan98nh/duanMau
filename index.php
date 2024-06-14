@@ -22,7 +22,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     $_SESSION["username"] = $checkUser['user'];
                     $_SESSION["role"] = $checkUser['role'];
                     header("Location: index.php?act=logined");
-                } else {
+                } else { 
                     $error = "thong tin dang nhap ko dung";
                     $_SESSION["error"] = $error;
                     header("Location: index.php?act=loginedFail");
